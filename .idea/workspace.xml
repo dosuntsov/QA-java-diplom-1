@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c978d274-513e-468e-9258-993c6327858d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestClassBun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktikum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/praktikum.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +36,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2K5eZx2l207uNilw0w70Jg7JxRD" />
   <component name="ProjectViewState">
@@ -53,7 +50,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestClassBun">
+  <component name="RunManager" selected="JUnit.TestClassIngredientType">
     <configuration name="TestClassBun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="praktikum" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,8 +70,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestClassIngredientType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="praktikum" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClassIngredientType" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClassIngredientType.checkIngTypeNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="praktikum" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClassIngredientType" />
+      <option name="METHOD_NAME" value="checkIngTypeNotNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClassIngredientType" />
+        <item itemvalue="JUnit.TestClassIngredientType.checkIngTypeNotNull" />
         <item itemvalue="JUnit.TestClassBun" />
         <item itemvalue="JUnit.TestClassBun.checkIfSetWorksFine" />
       </list>
@@ -90,6 +108,17 @@
       <updated>1673268929758</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/QA_java_diplom_1$TestClassBun.ic" NAME="TestClassBun Coverage Results" MODIFIED="1673271060385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
