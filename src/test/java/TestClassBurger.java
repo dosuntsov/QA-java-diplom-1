@@ -1,6 +1,5 @@
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import praktikum.Bun;
 import praktikum.Burger;
 import praktikum.Ingredient;
@@ -8,6 +7,8 @@ import praktikum.IngredientType;
 
 import java.util.Arrays;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestClassBurger {
     Burger burger = new Burger();
@@ -23,15 +24,16 @@ public class TestClassBurger {
         burger.addIngredient(startIngredients.get(2));
     }
 
-    //    @Test
-//    public void checkSetterBun(){
-//        burger.setBuns(bun);
-//        Assert.assertEquals(bun, burger.bun );
-//    }
+    @Test
+    public void checkSetterBun() {
+        burger.setBuns(bun);
+        Assert.assertEquals(bun, burger.bun);
+    }
+
     @Test
     public void checkAddingIngredients() {
         makeBurger();
-        Assert.assertEquals(startIngredients, burger.ingredients);
+        assertEquals(startIngredients, burger.ingredients);
 
     }
 
@@ -40,23 +42,31 @@ public class TestClassBurger {
         List<Ingredient> finalIngredients = Arrays.asList(new Ingredient[]{startIngredients.get(0), startIngredients.get(2)});
         makeBurger();
         burger.removeIngredient(1);
-        Assert.assertEquals(finalIngredients, burger.ingredients);
+        assertEquals(finalIngredients, burger.ingredients);
 
     }
 
     @Test
     public void checkMovingIngredients() {
-        List<Ingredient> finalIngredients = Arrays.asList(new Ingredient[]{startIngredients.get(0), startIngredients.get(2), startIngredients.get(1)});
+        List<Ingredient> expectedIngredients = Arrays.asList(new Ingredient[]{startIngredients.get(0), startIngredients.get(2), startIngredients.get(1)});
         makeBurger();
         burger.moveIngredient(1, 2);
-        Assert.assertEquals(finalIngredients, burger.ingredients);
+        assertEquals(expectedIngredients, burger.ingredients);
 
     }
 
     @Test
     public void getPrice() {
         burger.setBuns(bun);
-        burger.addIngredient(ingredient1);
-        Assert.assertEquals(300, burger.getPrice(), 0);
+        makeBurger();
+        assertEquals(700, burger.getPrice(), 0);
+    }
+
+    @Test
+    public void getReceipt() {
+        makeBurger();
+        burger.setBuns(bun);
+        String expected = "(==== black bun ====)\r\n= sauce ketchup =\r\n= filling cutlet =\r\n= sauce caesar =\r\n(==== black bun ====)\r\n\r\nPrice: 700,000000\r\n";
+        assertEquals(expected, burger.getReceipt());
     }
 }
