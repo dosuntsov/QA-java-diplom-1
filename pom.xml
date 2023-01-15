@@ -66,6 +66,12 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>*/Database.*</exclude>
+                        <exclude>*/Praktikum.*</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
